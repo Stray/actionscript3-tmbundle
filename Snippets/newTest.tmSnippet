@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>public function test_${1:testName}():void {
+	assertTrue("${3:${1/(^[^-_]+)?([-_]+)?/(?1:\u$1)(?2: )/g}} -&gt; not implemented", false);
+}
+</string>
+	<key>name</key>
+	<string>newTest</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>test</string>
+	<key>uuid</key>
+	<string>8ABD4CBA-2A9B-454B-8D9C-6DE5F0E36E86</string>
+</dict>
+</plist>

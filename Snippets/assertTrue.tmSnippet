@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>assertTrue("not implemented", false);</string>
+	<key>name</key>
+	<string>assertTrue</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>assertTrue</string>
+	<key>uuid</key>
+	<string>36A71DD7-A3DC-45E4-A928-9261195C3A77</string>
+</dict>
+</plist>

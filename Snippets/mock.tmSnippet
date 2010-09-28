@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>		override public function run():void{
+			var mockolateMaker:IEventDispatcher = prepare(ThingToMock);
+			mockolateMaker.addEventListener(Event.COMPLETE, prepareCompleteHandler);
+		}
+
+		private function prepareCompleteHandler(e:Event):void{
+			super.run();
+		}</string>
+	<key>name</key>
+	<string>mock</string>
+	<key>tabTrigger</key>
+	<string>mock</string>
+	<key>uuid</key>
+	<string>6E3577DE-7E13-428D-B51E-C29549FD1228</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>import org.osflash.signals.Signal;</string>
+	<key>name</key>
+	<string>import Signal</string>
+	<key>tabTrigger</key>
+	<string>signalimport</string>
+	<key>uuid</key>
+	<string>3DF4E33A-D9B7-4C84-9715-47E9306C7723</string>
+</dict>
+</plist>

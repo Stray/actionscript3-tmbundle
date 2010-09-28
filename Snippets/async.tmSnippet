@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>public function test_${1:testName}():void {
+	var handler:Function = addAsync(check_$1, $2);
+	instance.eventDispatcher.addEventListener($3.$4, handler);
+	
+	instance.$5
+}
+
+private function check_$1(e:$3):void {
+	assertEquals('event is correct type', $3.$4, e.type);
+	$6
+}</string>
+	<key>name</key>
+	<string>async</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>async</string>
+	<key>uuid</key>
+	<string>12828F4A-56DF-4335-8FB3-46C3F99DD069</string>
+</dict>
+</plist>

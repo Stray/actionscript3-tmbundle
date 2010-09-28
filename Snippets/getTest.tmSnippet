@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>public function test_get_${1:testName}():void {
+	assertEquals("Get ${3:${1/(^[^-_]+)?([-_]+)?/(?1:$1)(?2: )/g}}", ${4:VALUE}, instance.${5:$1});
+}</string>
+	<key>name</key>
+	<string>getTest</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>tabTrigger</key>
+	<string>testGet</string>
+	<key>uuid</key>
+	<string>0343C88B-1306-4F9D-9C24-F7A2A43D3C1C</string>
+</dict>
+</plist>

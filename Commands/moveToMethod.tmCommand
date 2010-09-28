@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+SUPPORT = "#{ENV['TM_SUPPORT_PATH']}"
+
+require SUPPORT + '/lib/exit_codes'
+require SUPPORT + '/lib/ui'
+
+code_to_move = STDIN.read
+
+TextMate.exit_show_tool_tip "Can't move an empty block to a method" if code_to_move.empty?
+
+functionName = TextMate::UI.request_string( :prompt =&gt; "function name" ,
+:button1 =&gt; "OK" )
+
+f_uri   = ENV["TM_FILEPATH"]
+f_open  = File.open( f_uri, "r" )
+txt     = f_open.read
+
+escaped_code_to_move = Regexp.escape(code_to_move)
+
+code_to_preserve_matches = txt.scan(/(?:#{escaped_code_to_move}){1}([^}]+){1}/)
+
+if code_to_preserve_matches.empty?
+	code_to_preserve = ''
+else
+	code_to_preserve = code_to_preserve_matches[0][0]
+end
+
+code_section = code_to_move + code_to_preserve
+
+file_contents_parts = txt.split(code_section)
+
+pre_change_content = file_contents_parts[0]
+post_change_content = file_contents_parts[1]
+
+print pre_change_content+'			'+ functionName +'();
+' + code_to_preserve + '}
+
+        private function ' + functionName + '():void
+		{
+' + code_to_move + '        ' + post_change_content
+</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@M</string>
+	<key>name</key>
+	<string>moveToMethod</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>scope</key>
+	<string>source.actionscript.3</string>
+	<key>uuid</key>
+	<string>B91A8B2E-46FE-4557-BA8C-26A25618E2C2</string>
+</dict>
+</plist>
