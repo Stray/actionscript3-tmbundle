@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var iLength:uint = ${1:tArr}.length;
-for (var i:int = 0; i &lt; iLength; i++)
-{
-	$0
+	<string>public function test_verified_visually():void { 
+	addChild(instance);
+	assertTrue("Verified visually", false);
+	removeChild(instance);
 }</string>
 	<key>name</key>
-	<string>for</string>
+	<string>visualTest</string>
 	<key>scope</key>
 	<string>source.actionscript.3</string>
 	<key>tabTrigger</key>
-	<string>for</string>
+	<string>visualTest</string>
 	<key>uuid</key>
-	<string>C66525AE-75BF-4EBD-9260-A71C0D95A100</string>
+	<string>86AE6FFA-AC7D-4E5B-986A-89C062682715</string>
 </dict>
 </plist>

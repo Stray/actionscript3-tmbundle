@@ -4,11 +4,12 @@
 <dict>
 	<key>content</key>
 	<string>		override public function run():void{
-			var mockolateMaker:IEventDispatcher = prepare(ThingToMock);
+			var mockolateMaker:IEventDispatcher = prepare($1);
 			mockolateMaker.addEventListener(Event.COMPLETE, prepareCompleteHandler);
 		}
 
 		private function prepareCompleteHandler(e:Event):void{
+			IEventDispatcher(e.target).removeEventListener(Event.COMPLETE, prepareCompleteHandler);
 			super.run();
 		}</string>
 	<key>name</key>

@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>	import mockolate.prepare;
+	<string>	import asunit.errors.AssertionFailedError;     
+
+	import mockolate.prepare;
 	import mockolate.nice;
 	import mockolate.stub;
    	import mockolate.verify;
+	import mockolate.errors.VerificationError;
 	
 	import org.hamcrest.core.anything;
 	import org.hamcrest.core.not;
 	import org.hamcrest.object.equalTo;
 	import org.hamcrest.object.nullValue;
 	import org.hamcrest.object.strictlyEqualTo;
+	import org.hamcrest.object.hasPropertyWithValue;
 	
 	import flash.events.Event;
-	import flash.events.IEventDispatcher;  </string>
+	import flash.events.IEventDispatcher;</string>
 	<key>name</key>
 	<string>mockolate imports</string>
 	<key>tabTrigger</key>

@@ -4,10 +4,10 @@
 <dict>
 	<key>content</key>
 	<string>public function test_get_${1:testName}():void {
-	assertEquals("Get ${3:${1/(^[^-_]+)?([-_]+)?/(?1:$1)(?2: )/g}}", ${4:VALUE}, instance.${5:property});
+	assertEquals("Get ${3:${1/(^[^-_]+)?([-_]+)?/(?1:$1)(?2: )/g}}", ${4:VALUE}, instance.${5:$1});
 }
 
-public function test_set_${1}():void {
+public function test_set_${1:testName}():void {
 	instance.$5 =  ${6:NEW_VALUE};
 	assertEquals("Set ${3:${1/(^[^-_]+)?([-_]+)?/(?1:$1)(?2: )/g}}", $6 , instance.$5);
 }</string>

@@ -13,7 +13,7 @@ module SourceTools
   #
   def self.common_src_dir_list
     src_dirs = ENV['TM_AS3_USUAL_SRC_DIRS']
-    src_dirs = "src:lib:source:test" if src_dirs == nil
+    src_dirs = "src:lib:source:test:support:robotlegs" if src_dirs == nil
     src_dirs
   end
 

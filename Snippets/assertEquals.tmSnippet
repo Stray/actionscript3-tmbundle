@@ -3,18 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var iLength:uint = ${1:tArr}.length;
-for (var i:int = 0; i &lt; iLength; i++)
-{
-	$0
-}</string>
+	<string>assertEquals("${1:value} ${2:set correctly}", ${3:test_$1}, ${4:instance}.${5:$1});
+</string>
 	<key>name</key>
-	<string>for</string>
+	<string>assertEquals</string>
 	<key>scope</key>
 	<string>source.actionscript.3</string>
 	<key>tabTrigger</key>
-	<string>for</string>
+	<string>assertE</string>
 	<key>uuid</key>
-	<string>C66525AE-75BF-4EBD-9260-A71C0D95A100</string>
+	<string>FD7B3D7F-B0AF-42EB-B542-D827338789E7</string>
 </dict>
 </plist>
